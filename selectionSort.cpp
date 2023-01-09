@@ -12,6 +12,11 @@ void swap (int &num1 , int &num2);
 void selectionSort ( int *int_array , int len);
 int main ()
 {
+    /*_______For rundom number generator ( -1000 -> 1000 )__________
+    srand( (unsigned int)time(NULL) );
+    for (int i = 0; i < len; i++)
+          array[i] = ( rand() % 20000) - 10000;
+    ________________________________________________________________*/
     int array [] = {100,50,10,30,70,200};
     selectionSort(array,6);
     for (int j : array)
